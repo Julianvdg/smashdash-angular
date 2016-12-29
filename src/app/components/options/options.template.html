@@ -1,0 +1,10 @@
+<h1>Options component</h1>
+<ul>
+    <li ng-repeat="obj in $ctrl.eventProcessors">{{obj.aggregationName}}</li>
+</ul>
+
+<p>selected item is : {{selectedItem}}</p>
+<select ng-model="selectedItem">
+    <option ng-repeat="eventProcessor in $ctrl.eventProcessors" value="{{eventProcessor.aggregationName}}">{{eventProcessor.aggregationName}}</option>
+</select>
+
